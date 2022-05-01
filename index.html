@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./app.js" type="module"></script>
+		<title>Document</title>
+	</head>
+	<body>
+		<template id="icon-btn">
+			<style>
+				* {
+					box-sizing: border-box;
+					margin: 0;
+					padding: 0;
+				}
+				:host {
+					box-sizing: border-box;
+					display: inline-block;
+					font-family: sans-serif;
+					color: orangered;
+					font-size: 1.5rem;
+				}
+
+				.wrapper {
+					border-radius: 100px;
+					background-color: mistyrose;
+					padding: 0.3rem 0.7rem;
+				}
+
+				.wrapper:hover {
+					background-color: hsl(6, 100%, 90%);
+					cursor: pointer;
+				}
+			</style>
+			<div class="wrapper">
+				<span class="text">click</span><span class="icon"></span>
+			</div>
+		</template>
+		<div class="box"></div>
+	</body>
+</html>
